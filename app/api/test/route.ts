@@ -12,7 +12,7 @@ export async function GET() {
     const result = await client.query(`
       SELECT * FROM puzzles
       ORDER BY RANDOM()
-      LIMIT 5
+      LIMIT 20
     `);
     client.release();
 
